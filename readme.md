@@ -1,9 +1,9 @@
 
+https://sandrodevx.github.io/Web-Portfolio/
+
+
 # Portfolio de Sandro Gomez
 
-        https://sandrodevx.github.io/Web-Portfolio/
-
-        
 Este es el portfolio personal de **Sandro Gomez**, un **Web Developer**. Este proyecto muestra las habilidades y experiencia como desarrollador web, junto con los proyectos que he desarrollado utilizando tecnologías como **HTML**, **CSS** y **JavaScript**.
 
 ## Descripción
