@@ -17,14 +17,12 @@ En este portfolio, los visitantes pueden ver una lista de proyectos que he compl
 - **HTML5**: Utilizado para estructurar el contenido de la página.
 - **CSS3**: Estiliza la página web y crea una experiencia visual atractiva.
 - **JavaScript**: Utilizado para interactividad en la web y algunas funcionalidades dinámicas.
-- **Video**: Para mostrar un video introductorio que forma parte de la presentación.
 - **Formularios**: Implementación de formularios para permitir el contacto de los usuarios.
 
 ## Estructura del Proyecto
 
 - **index.html**: El archivo principal que contiene el contenido del portfolio.
 - **style.css**: Archivo que contiene todos los estilos CSS para darle formato al portfolio.
-- **reels 4.mov**: Un video que se reproduce automáticamente en el encabezado del portfolio.
 - **Imágenes y Logos**: Diversas imágenes utilizadas en los proyectos y en la sección de habilidades.
 
 ## Secciones del Portfolio
