@@ -1,4 +1,3 @@
-/* Estilo global */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@ h1, h2, h3, h4 {
 /* Encabezado */
 header {
     text-align: center;
-    background-color: #333;
+    background-color: skyblue;
     color: white;
     padding: 20px 0;
 }
@@ -46,13 +45,21 @@ header img.circle {
     margin-top: 20px;
 }
 
-header video {
+header img{
+    border-radius: 50%;
     margin-top: 20px;
+
+}
+header img:hover{
+    transform: scale(1.1);
+    transition-duration: .3s;
+
+
 }
 
 /* Barra de navegación */
 #navbar {
-    background-color: #333;
+    background-color:skyblue;
     color: white;
     padding: 10px;
     position: fixed;
