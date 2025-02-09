@@ -1,3 +1,4 @@
+/* Estilo global */
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +32,12 @@ header h1 {
 header h2 {
     font-size: 1.5em;
     margin-top: 10px;
+}
+h4{
+
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
 }
 
 header hr {
@@ -104,10 +111,11 @@ header img:hover{
     padding: 80px 20px 50px;
     text-align: center;
     background-color: #fff;
+
 }
 
 #portfolio h3 {
-    font-size: 2.5em;  /* Aumentamos el tamaño del título */
+    font-size: 2em;  /* Aumentamos el tamaño del título */
     margin-bottom: 20px;
     color: #333;  /* Aseguramos que el texto sea de color oscuro para que se vea bien */
     text-transform: uppercase;  /* Hacemos el texto en mayúsculas para mayor visibilidad */
@@ -118,9 +126,14 @@ header img:hover{
     position: relative;  /* Aseguramos que el botón sea relativo para posicionar el enlace sobre él */
     border: none;
     background: none;
-    display: inline-block;
-    margin-bottom: 20px;
+    display:   block;
+    margin: 2rem auto;
     width: 100%;
+    max-width: 400px;
+    cursor: zoom-in;
+    box-shadow: 0 0 10px var(--gray2);
+    padding: 0;
+    overflow: hidden;
 }
 
 #portfolio button h4 {
@@ -140,14 +153,50 @@ header img:hover{
 }
 
 #portfolio img {
-    max-width: 100%;
+    display: block;
+    max-height: 300px;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
+    transform: ease-in-out 0.3s;
+}
+#portfolio button:hover img{
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+#portfolio button:hover::before{
+    content: '';
+    background-color: skyblue;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: opacity ease 0.3s;
+    opacity: 0;
+}
+#portfolio button:hover::before{
+    opacity: 0.75;
 }
 
 #portfolio h4 {
-    font-size: 1.2em;
-    margin-top: 10px;
+    
+    display: block;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    opacity: 0;
+    transition: bottom ease-in-out .6s, opacity ease-in-out .6s;
+}
+#portfolio button:hover h4{
+    bottom: 40%;
+    left: 40%;
+    opacity: 1;
+    
 }
 
 #portfolio a {
@@ -236,7 +285,7 @@ header img:hover{
 /* Sección Contacto */
 #contact {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: skyblue;
 }
 
 #contact h3 {
