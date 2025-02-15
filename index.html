@@ -9,25 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <header>
-        
-        <img  class="img" src="portada serie trekk-7.jpg" alt="portada">
+        <img class="img" src="portada serie trekk-7.jpg" alt="Portada de fondo con temática de viajes espaciales">
         <h1><small>Sandro Gomez</small></h1>
         <hr />
         <p><small>Web Developer</small></p>
-        <img style="width: 150px" class="circle" src="./DSC00325-Mejorado-NR.jpg"   alt="Sandro Gomez" width="200px;" />
-        
-        
-          
-        
+        <img class="circle profile-img" src="./DSC00325-Mejorado-NR.jpg" alt="Foto de perfil de Sandro Gomez">
+    </header>
+
     <nav id="navbar" class="open">
         <div>
             <a href="#contact">
-                <img style="width: 60px;" img class="circle" src="./Logos/Preview.png" alt="logo small"/>
-                
+                <img class="circle logo-small" src="./Logos/Preview.png" alt="Logo pequeño">
             </a>
             <button id="hamburger">☰</button>
         </div>
@@ -38,124 +33,114 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    </header>
-    <main> 
-        
+
+    <main>
         <section id="portfolio">
             <h3>Portfolio</h3>
             <hr />
-            <div>
-                <button>
-                    <img style="width: 600px;" src ="./proyectos/Screenshot 2025-02-02 110541.png" >
-                    
+            <div class="portfolio-grid">
+                <button class="project-card">
+                    <img src="./proyectos/Screenshot 2025-02-02 110541.png" alt="Captura del proyecto Thindog">
                     <h4><a href="https://sandrodevx.github.io/Bootstrap-Thindog/">Thindog</a></h4>
                 </button>
-                <button>
-                    <img style="width: 600px;" src ="./proyectos/Screenshot 2025-02-02 111840.png" >
-                    
+                <button class="project-card">
+                    <img src="./proyectos/Screenshot 2025-02-02 111840.png" alt="Captura del proyecto Flexspot Pricing Table">
                     <h4><a href="https://sandrodevx.github.io/Flexspot-Pricing-Table/">Flexspot Pricing Table</a></h4>
                 </button>
-                <button>
-                    <img style="width: 600px;" src ="./proyectos/Screenshot 2025-02-03 212255.png" >
-                    
-                    <h4><a href="https://sandrodevx.github.io/IG-Feed/">IG IG-Feed</a></h4>
+                <button class="project-card">
+                    <img src="./proyectos/Screenshot 2025-02-03 212255.png" alt="Captura del proyecto IG Feed">
+                    <h4><a href="https://sandrodevx.github.io/IG-Feed/">IG Feed</a></h4>
                 </button>
-               
             </div>
         </section>
+
         <section id="skillset" class="even">
             <h3>Skillset</h3>
             <hr />
-            <div>
+            <div class="skills-grid">
                 <div>
-                    <img src="./Logos/html5.png">
+                    <img src="./Logos/html5.png" alt="Logo de HTML5">
                     <span class="tooltip">HTML</span>
                 </div>
                 <div>
-                    <img src="./Logos/css3.png">
+                    <img src="./Logos/css3.png" alt="Logo de CSS3">
                     <span class="tooltip">CSS</span>
                 </div>
                 <div>
-                    <img src="./Logos/javascript.png">
+                    <img src="./Logos/javascript.png" alt="Logo de JavaScript">
                     <span class="tooltip">Javascript</span>
                 </div>
             </div>
-
         </section>
+
         <section id="experience">
             <h3>Experience</h3>
             <hr />
-            <div>
-                <a>
-                    <img>
-                    <h4> Thin dog</h4>
-                </a>
-            </div>
-            <div>
-                <a>
-                    <img >
-                    <h4> Flexing Spot Pricing Table</h4>
-                </a>
-
-            </div>
-            <div>
-                <a>
-                    <img>
-                    <h4> IG Feed</h4>
-                </a>
-                
+            <div class="experience-grid">
+                <div>
+                    <img src="./proyectos/Screenshot 2025-02-02 110541.png" alt="Captura del proyecto Thindog">
+                    <h4>Thindog</h4>
+                </div>
+                <div>
+                    <img src="./proyectos/Screenshot 2025-02-02 111840.png" alt="Captura del proyecto Flexspot Pricing Table">
+                    <h4>Flexspot Pricing Table</h4>
+                </div>
+                <div>
+                    <img src="./proyectos/Screenshot 2025-02-03 212255.png" alt="Captura del proyecto IG Feed">
+                    <h4>IG Feed</h4>
+                </div>
             </div>
         </section>
+
         <section id="certificate">
             <h3>Certificate</h3>
             <hr />
-            <div>
-                <a>
-                    <img>
-                    <h4> Academia X</h4>
-                </a>
+            <div class="certificate-grid">
+                <div>
+                    <img src="./certificados/academia-x.jpg" alt="Certificado de Academia X">
+                    <h4>Academia X</h4>
+                </div>
+                <div>
+                    <img src="./certificados/angela-yu.jpg" alt="Certificado de Angela Yu">
+                    <h4>Angela Yu</h4>
+                </div>
+                <div>
+                    <img src="./certificados/4geeks-academy.jpg" alt="Certificado de 4Geeks Academy">
+                    <h4>4Geeks Academy</h4>
+                </div>
             </div>
-            <div>
-                <a>
-                    <img>
-                    <h4> Angela Yu</h4>
-                </a>
-            </div>
-            <div>
-                <a>
-                    <img>
-                    <h4> 4 Geeks Academy</h4>
-                </a>
-            </div>
-        
         </section>
+
         <section id="contact" class="even">
             <h3>Contact</h3>
             <hr />
             <form action="https://formspree.io/f/xanqjdpe" method="POST">
                 <label for="email">
                     Your email:
-                    <input type="email" name="email" id="email" placeholder="Enter your email" />
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 </label>
                 <label for="message">
                     Your message:
-                    <textarea name="message" id="message" placeholder="Write your message here"></textarea>
+                    <textarea name="message" id="message" placeholder="Write your message here" required></textarea>
                 </label>
                 <button type="submit">Send</button>
             </form>
             <nav id="social-media">
                 <a href="https://github.com/sandrodevx">
-                    <img style="width:100px;" id="github" src="./Logos/GitHub-logo.png" />
+                    <img id="github" src="./Logos/GitHub-logo.png" alt="Logo de GitHub">
                 </a>
                 <a href="https://www.linkedin.com/in/sandro-gomez-21355b346/">
-                    <img style="width:50px;" id="linkedin" src="./Logos/png-clipart-linkedin-linkedin-thumbnail.png" />
+                    <img id="linkedin" src="./Logos/png-clipart-linkedin-linkedin-thumbnail.png" alt="Logo de LinkedIn">
                 </a>
             </nav>
         </section>
     </main>
+
     <footer>
         <small>Developed and designed by Sandro Gomez. ©2025. All rights reserved.</small>
     </footer>
 
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
