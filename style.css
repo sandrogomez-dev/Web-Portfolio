@@ -1,8 +1,8 @@
 :root {
-    --primary: hsl(190, 68%, 53%);
-    --primary-dark: hsl(190, 68%, 50%);
-    --secondary: hsl(25, 99%, 60%);
-    --secondary-dark: hsl(25, 99%, 60%);
+    --primary: hsl(145, 63%, 49%); /* Verde esmeralda */
+    --primary-dark: hsl(145, 63%, 40%); /* Verde esmeralda oscuro */
+    --secondary: hsl(120, 61%, 50%); /* Verde más brillante */
+    --secondary-dark: hsl(120, 61%, 40%); /* Verde más oscuro */
     --white: #f5f9fa;
     --white2: #ebf3f5;
     --gray: #e1e4e5;
@@ -266,6 +266,10 @@ header .img:hover {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
     margin: 1rem;
+    background-color: var(--white2);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #skillset img {
@@ -277,6 +281,7 @@ header .img:hover {
 
 #skillset img:hover {
     transform: scale(1.1);
+    filter: brightness(1.1);
 }
 
 #skillset > div > div {
@@ -359,6 +364,7 @@ form button:hover {
     border-radius: 50%;
     transition: transform 0.3s ease;
     margin: 1rem;
+    width: 50px;
 }
 
 #social-media a {
@@ -421,4 +427,72 @@ form button:hover {
     form label {
         width: 90%;
     }
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode section.even {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode #navbar,
+.dark-mode section.even {
+    background: linear-gradient(#333, #222);
+}
+
+.dark-mode #social-media img {
+    filter: invert(1);
+}
+
+/* Estilos para la imagen de perfil */
+.profile-img {
+    width: 150px; /* Tamaño fijo para la imagen de perfil */
+    height: 150px; /* Mantener la proporción */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    border: 3px solid var(--primary); /* Borde para resaltar */
+    margin: 1rem auto; /* Centrar la imagen */
+}
+
+/* Estilos para el logo pequeño en la barra de navegación */
+.logo-small {
+    width: 60px; /* Tamaño fijo para el logo */
+    height: 60px; /* Mantener la proporción */
+    object-fit: contain; /* Asegura que el logo se vea completo */
+}
+
+/* Estilos para las imágenes en la sección de experiencia */
+.experience-grid img {
+    width: 100%; /* Ocupar el 100% del contenedor */
+    max-width: 300px; /* Tamaño máximo para evitar que sean demasiado grandes */
+    height: auto; /* Mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    margin: 1rem 0; /* Espaciado */
+}
+
+/* Estilos para las imágenes en la sección de certificados */
+.certificate-grid img {
+    width: 100%; /* Ocupar el 100% del contenedor */
+    max-width: 300px; /* Tamaño máximo para evitar que sean demasiado grandes */
+    height: auto; /* Mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    margin: 1rem 0; /* Espaciado */
+}
+
+/* Estilos para las imágenes en la sección de portfolio */
+.portfolio-grid img {
+    width: 100%; /* Ocupar el 100% del contenedor */
+    max-width: 600px; /* Tamaño máximo para evitar que sean demasiado grandes */
+    height: auto; /* Mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    margin: 1rem 0; /* Espaciado */
 }
