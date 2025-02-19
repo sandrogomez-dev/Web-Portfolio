@@ -1,7 +1,7 @@
 :root {
-    --primary: hsl(145, 63%, 49%); /* Verde esmeralda */
-    --primary-dark: hsl(145, 63%, 40%); /* Verde esmeralda oscuro */
-    --secondary: hsl(120, 61%, 50%); /* Verde más brillante */
+    --primary: hsl(130, 60%, 30%); /* Verde esmeralda */
+    --primary-dark: hsl(130, 60%, 20%); /* Verde esmeralda oscuro */
+    --secondary: hsl(130, 60%, 40%); /* Verde más brillante */
     --secondary-dark: hsl(120, 61%, 40%); /* Verde más oscuro */
     --white: #f5f9fa;
     --white2: #ebf3f5;
