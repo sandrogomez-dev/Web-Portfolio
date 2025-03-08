@@ -1,16 +1,23 @@
 :root {
-    --primary: hsl(130, 60%, 30%); /* Verde esmeralda */
-    --primary-dark: hsl(130, 60%, 20%); /* Verde esmeralda oscuro */
-    --secondary: hsl(130, 60%, 40%); /* Verde más brillante */
-    --secondary-dark: hsl(120, 61%, 40%); /* Verde más oscuro */
-    --white: #f5f9fa;
-    --white2: #ebf3f5;
-    --gray: #e1e4e5;
-    --gray2: #c0c6c9;
-    --gray3: #4b4c4d;
-    --black: #323333;
-    --black2: #2a2b2b;
-}
+     /* Nueva paleta profesional */
+     --primary: #2A5C82;       /* Azul corporativo */
+     --primary-dark: #1E4159;
+     --secondary: #FFB400;     /* Dorado acento */
+     --secondary-dark: #CC9100;
+     
+     --white: #F8F9FA;
+     --white2: #E9ECEF;
+     --gray: #DEE2E6;
+     --gray2: #ADB5BD;
+     --gray3: #495057;
+     --black: #212529;
+     --black2: #1A1E21;
+     
+     /* Variables de layout seguras */
+     --max-width: 1200px;
+     --border-radius: 8px;
+ }
+
 
 body {
     font-family: 'Montserrat', sans-serif;
