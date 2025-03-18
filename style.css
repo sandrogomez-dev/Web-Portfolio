@@ -1,24 +1,24 @@
 :root {
-    /* Nueva paleta profesional */
-    --primary: #2A5C82;       /* Azul corporativo */
-    --primary-dark: #1E4159;
-    --secondary: #FFB400;     /* Dorado acento */
-    --secondary-dark: #CC9100;
-    
-    --white: #F8F9FA;
-    --white2: #E9ECEF;
-    --gray: #DEE2E6;
-    --gray2: #ADB5BD;
-    --gray3: #495057;
-    --black: #212529;
-    --black2: #1A1E21;
-    
-    /* Variables de layout seguras */
-    --max-width: 1200px;
-    --border-radius: 8px;
-}
+     /* Nueva paleta profesional */
+     --primary: #2A5C82;       /* Azul corporativo */
+     --primary-dark: #1E4159;
+     --secondary: #FFB400;     /* Dorado acento */
+     --secondary-dark: #CC9100;
+     
+     --white: #F8F9FA;
+     --white2: #E9ECEF;
+     --gray: #DEE2E6;
+     --gray2: #ADB5BD;
+     --gray3: #495057;
+     --black: #212529;
+     --black2: #1A1E21;
+     
+     /* Variables de layout seguras */
+     --max-width: 1200px;
+     --border-radius: 8px;
+ }
 
-/* Estilos generales */
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--gray3);
@@ -29,8 +29,8 @@ body {
     box-sizing: border-box;
 }
 
-html {
-    background: linear-gradient(var(--white), var(--white2));
+header, footer, section.even {
+    color: var(--white);
 }
 
 h1, h2, h3, h4 {
@@ -53,9 +53,36 @@ h4 {
     border-radius: 50%;
 }
 
-/* Layout y secciones principales */
-header, footer, section.even {
-    color: var(--white);
+html {
+    background: linear-gradient(var(--white), var(--white2));
+}
+
+section {
+    padding: 3rem 1rem;
+}
+
+#navbar, section.even {
+    background: linear-gradient(var(--primary), var(--primary-dark));
+}
+
+footer {
+    background: linear-gradient(var(--black), var(--black2));
+    padding: 2rem 0;
+}
+
+hr {
+    height: 0.1rem;
+    max-width: 100%;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary), rgba(0, 0, 0, 0));
+}
+
+section.even hr {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--white), rgba(0, 0, 0, 0));
+}
+
+section hr {
+    margin-bottom: 5rem;
 }
 
 header {
@@ -82,35 +109,6 @@ header .img:hover {
     transform: scale(1.1);
 }
 
-section {
-    padding: 3rem 1rem;
-}
-
-section.even {
-    background: linear-gradient(var(--primary), var(--primary-dark));
-}
-
-footer {
-    background: linear-gradient(var(--black), var(--black2));
-    padding: 2rem 0;
-}
-
-hr {
-    height: 0.1rem;
-    max-width: 100%;
-    border: 0;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary), rgba(0, 0, 0, 0));
-}
-
-section.even hr {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--white), rgba(0, 0, 0, 0));
-}
-
-section hr {
-    margin-bottom: 5rem;
-}
-
-/* Barra de navegación */
 #navbar {
     box-shadow: 0 0 10px 1px var(--gray3);
     position: sticky;
@@ -194,7 +192,6 @@ section hr {
     background-color: var(--white);
 }
 
-/* Portafolio */
 #portfolio button {
     display: block;
     position: relative;
@@ -271,7 +268,6 @@ section hr {
     opacity: 0.75;
 }
 
-/* Habilidades */
 #skillset > div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -331,7 +327,6 @@ section hr {
     border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
 }
 
-/* Formularios */
 form {
     font-size: 1.2rem;
 }
@@ -372,7 +367,6 @@ form button:hover {
     background-color: var(--secondary-dark);
 }
 
-/* Redes sociales */
 #social-media img {
     border-radius: 50%;
     transition: transform 0.3s ease;
