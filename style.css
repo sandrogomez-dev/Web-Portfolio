@@ -380,10 +380,11 @@ form button:hover {
 
 #linkedin:hover {
     background-color: #8d9194;
+    transform: scale(1.1);
 }
 
 #github:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 /* Media Queries para Responsividad */
