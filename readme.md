@@ -1,5 +1,5 @@
 
-[View Live Page](https://sandrodevx.github.io/Web-Portfolio/)
+[View Live Page](https://sandrogomez-dev.github.io/Web-Portfolio/)
 
 
 # Portfolio de Sandro Gomez
